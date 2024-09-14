@@ -1,0 +1,324 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header {
+    background: #f4f4f4;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid #ccc;
+    background-color: #1e7a9c;
+    color: white;
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+nav {
+    background: #005a78;
+    margin: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #00456d;
+}
+
+/* Main Section */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Feature Section */
+.feature-section {
+    min-height: 900px;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-section h2 {
+    margin-bottom: 0.5rem;
+    color: #005a78;
+}
+
+/* Calendar Placeholder */
+.calendar, .video-consult {
+    padding: 1rem;
+    background-color: #e5f2f6;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Health Tracking Form */
+#health-tracking-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 1rem;
+}
+
+#health-tracking-form label {
+    margin-bottom: 0.5rem;
+}
+
+#health-tracking-form input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#health-tracking-form button {
+    padding: 0.5rem 1rem;
+    background-color: #1e7a9c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Symptom Search */
+#symptom-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#symptom-input {
+    padding: 0.5rem;
+    width: 800px;
+    max-width: 1100px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+#symptom-results {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #e5f2f6;
+    border-radius: 4px;
+    width: 1200px;
+    max-width: 1200px;
+}
+#Symptom-Logo {
+    width: 50px;
+    height: 50px;
+}
+/* Footer Section */
+footer {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #ccc;
+}
+
+/* Media Queries for Large Screens */
+@media (min-width: 1200px) {
+    .feature-section {
+        /*flex-direction: row;*/
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    .feature-section .calendar, .feature-section .video-consult {
+        flex: 1;
+        margin: 0 1rem;
+    }
+
+    #health-tracking-form {
+        width: 50%;
+    }
+
+    #symptom-input {
+        width: 50%;
+    }
+
+    #symptom-results {
+        width: 97%;
+    }
+}
+
+
+
+
+
+
+/* CSS Variables for easy theming */
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #f5f5f5;
+    --text-color: #333;
+    --border-color: #ddd;
+    --hover-color: #3a7bc8;
+  }
+  
+  /* General styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Symptom Search Section Styles */
+  .feature-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #symptom-search h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  #symptom-search img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+    border-radius: 8px;
+  }
+  
+  #symptom-input {
+    width: 1200px;
+    padding: 0.75rem;
+    font-size: 2rem;
+    border: 3px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  #symptom-search button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #symptom-search button:hover {
+    background-color: var(--hover-color);
+  }
+  
+  #symptom-results {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    min-height: 100px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .feature-section {
+      padding: 1rem;
+    }
+  
+    #symptom-search h2 {
+      font-size: 1.5rem;
+    }
+  
+    #symptom-input,
+    #symptom-search button {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Accessibility improvements */
+  #symptom-search button:focus,
+  #symptom-input:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+  }
+  
+  /* Animation for search results */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  #symptom-results:not(:empty) {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+
+
+
+
+
+
+
+
+  

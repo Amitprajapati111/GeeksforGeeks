@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare & Pharmacy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Pharmacy Logo">
+            </div>
+            <!--<div class="address">
+                <p>Delivery Address: <a href="#">Select Address</a></p>
+            </div>-->
+            <div class="search-bar">
+                <input type="text" placeholder="Search Medicines">
+                <button>Search</button>
+            </div>
+            <div class="user-actions">
+                <a href="#">Login</a>
+                <a href="#"><i class="cart-icon">🛒</i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#">Buy Medicines</a></li>
+            <li><a href="#">Find Doctors</a></li>
+            <li><a href="#">Lab Tests</a></li>
+            <li><a href="#">Circle Membership</a></li>
+            <li><a href="#">Health Records</a></li>
+            <li><a href="#">Buy Insurance</a></li>
+            <li><a href="#appointment-scheduling">Appointment</a></li>
+            <li><a href="#telemedicine">Telemedicine</a></li>
+            <li><a href="#health-tracking">Health Tracking</a></li>
+            <li><a href="#virtual-consultation">Consultations</a></li>
+            <li><a href="#symptom-search">Symptom Search</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Appointment Scheduling Section -->
+        <section id="appointment-scheduling" class="feature-section">
+            <h2>Appointment Scheduling</h2>
+            
+            <img src="Banner-1.png" alt="Pharmacy Logo"style="width: 1200px; height: auto;">
+            <p>View available time slots and book appointments.</p>
+            <!-- Placeholder for calendar -->
+            <div class="calendar">
+                <p>Calendar component goes here...</p>
+            </div>
+        </section>
+
+        <!-- Telemedicine Section 
+        <section id="telemedicine" class="feature-section">
+            <h2>Telemedicine</h2>
+            <p>Connect with doctors via secure video calls.</p>
+            <!-Placeholder for video consultation 
+            <div class="video-consult">
+                <p>Video consultation interface goes here...</p>
+            </div> -->
+        </section>
+
+        <!-- Health Tracking Section -->
+        <section id="health-tracking" class="feature-section">
+            <h2>Health Tracking</h2>
+            <img src="banner-6.jpg" alt="Symptom-Logo"style="width: 1200px; height: auto;">
+            <form id="health-tracking-form">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight">
+                <label for="bp">Blood Pressure (mmHg):</label>
+                <input type="text" id="bp" name="bp">
+                <button type="button" onclick="trackHealth()">Track</button>
+            </form>
+            <div id="health-metrics">
+                <h3>Tracked Metrics:</h3>
+                <div id="metrics-display">
+                    <!-- Tracked metrics will be displayed here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Virtual Consultation Section -->
+        <section id="virtual-consultation" class="feature-section">
+            <h2>Virtual Consultations</h2>
+            <img src="banner-4.png" alt="Symptom-Logo"style="width: 1200px; height: auto;">
+            <p>Chat or video call with healthcare professionals.</p>
+            <!-- Placeholder for chat and video call options -->
+            <div class="consult-options">
+                <button>Start Chat</button>
+                <button>Start Video Call</button>
+            </div>
+        </section>
+
+        <!-- Symptom Search Section -->
+        <section id="symptom-search" class="feature-section">
+            <h2>Symptom Search</h2>
+            <img src="banner-3.jpg" alt="Symptom-Logo" style="width: 1200px; height: auto;">
+            <input type="text" id="symptom-input" placeholder="Enter symptoms...">
+            <button onclick="searchSymptoms()">Search</button>
+            <div id="symptom-results">
+                <!-- Search results will be displayed here -->
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Healthcare & Pharmacy. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
